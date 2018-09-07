@@ -4,6 +4,7 @@
   "description": "Somos todos Herois App!",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production"
   },
   "author": "Higor Eduardo Borges Galdino",
@@ -19,6 +20,7 @@
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "webpack": "^4.17.2",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
   }
 }
