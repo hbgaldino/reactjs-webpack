@@ -1,9 +1,12 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
 
 
 class Header extends React.Component {
     render() {
-        return (<div>componente</div>);
+        return (<div>
+            <Trans i18nKey="header" />
+        </div>);
     }
 }
 
