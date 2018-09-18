@@ -20,8 +20,8 @@ class App extends React.Component {
                                         <li><Link to="/">Home</Link></li>
                                         <li><Link to="/dashboard">Dashboard</Link></li>
                                     </ul>
-                                    <button onClick={() => i18n.changeLanguage('enUS')}>enUS</button>
-                                    <button onClick={() => i18n.changeLanguage('ptBR')}>ptBR</button>
+                                    <button onClick={() => i18n.changeLanguage('en-US')}>enUS</button>
+                                    <button onClick={() => i18n.changeLanguage('pt')}>ptBR</button>
                                 </div>
                                 <Route exact path="/" component={Home} />
                                 <Route exact path="/dashboard" component={Dashboard} />

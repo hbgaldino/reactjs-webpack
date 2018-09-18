@@ -8,8 +8,9 @@ i18n
   .use(LanguageDetector)
   .use(reactI18nextModule)
   .init({
-    fallbackLng: 'ptBR',
-
+    detection: {
+      order: ['navigator', 'querystring', 'cookie']
+    },
     // have a common namespace used around the full app
     ns: ['translations'],
     defaultNS: 'translations',
@@ -24,7 +25,10 @@ i18n
       defaultTransParent: 'div', // needed for preact
       wait: true
     }
-  });
+  }, sayHello);
 
+function sayHello() {
+  console.log("OI " + navigator.languages);
+}
 
 export default i18n;
